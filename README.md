@@ -34,7 +34,7 @@ To use this editor, you need Silkroad Online game files:
 
 ### Prerequisites
 - **Visual Studio 2019 or later** (or Visual Studio Code with C# extension)
-- **.NET Framework 4.8** (included with Windows 10/11)
+- **.NET Framework 4.0 or later** (included with Windows 10/11)
 - **OpenTK** (included in project references)
 
 ### Build Steps
@@ -71,7 +71,7 @@ To use this editor, you need Silkroad Online game files:
 ### Enhanced Features
 - **Fixed Mouse Controls**: Resolved the "mouse spinning like crazy" issue reported by users
 - **Improved Camera Movement**: Better panning and rotation controls
-- **Updated Dependencies**: Upgraded to .NET Framework 4.8 for better compatibility
+- **Updated Dependencies**: Compatible with .NET Framework 4.0+ for better compatibility
 - **Code Cleanup**: Removed unused code and improved structure
 - **Better Error Handling**: More robust file loading and error management
 
