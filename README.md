@@ -2,6 +2,30 @@
 
 A 3D map viewer and editor for Silkroad Online game files.
 
+## Inspiration
+
+This project was inspired by the need to visualize and edit Silkroad Online map data for private server development and modding. The editor provides a 3D interface to work with the game's complex map file structure, making it easier to understand and modify the game world.
+
+## Getting Game Files
+
+To use this editor, you need Silkroad Online game files:
+
+1. **Extract from PK2 archives** using tools like PK2Extractor
+2. **Place files in correct directories**:
+   - `Data/` - Contains .bms, .bmt, .ddj, .bsr files
+   - `Map/` - Contains .o2, .m, .t files
+3. **File structure should match**:
+   ```
+   Data/
+   ├── prim/mesh/     # 3D models (.bms)
+   ├── prim/mtrl/     # Materials (.bmt)
+   └── res/           # Resources (.ddj, .bsr)
+   Map/
+   ├── [Y]/[X].o2     # Object files
+   ├── [Y]/[X].m      # Terrain files
+   └── [Y]/[X].t      # Texture files
+   ```
+
 ## Features
 
 - **3D Map Viewing**: Load and view Silkroad Online map files (.o2, .m, .t)
