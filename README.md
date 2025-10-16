@@ -2,6 +2,10 @@
 
 A 3D map viewer and editor for Silkroad Online game files.
 
+## Attribution
+
+This project is based on the original SRO Map Editor source code from [elitepvpers](https://www.elitepvpers.com/forum/silkroad-online/pserver-guides-releases/4245552-re-release-sro-map-editor.html) by sro_cyklon. I have enhanced and improved the original codebase with additional features and bug fixes.
+
 ## Inspiration
 
 This project was inspired by the need to visualize and edit Silkroad Online map data for private server development and modding. The editor provides a 3D interface to work with the game's complex map file structure, making it easier to understand and modify the game world.
@@ -26,6 +30,32 @@ To use this editor, you need Silkroad Online game files:
    └── [Y]/[X].t      # Texture files
    ```
 
+## Building the Solution
+
+### Prerequisites
+- **Visual Studio 2019 or later** (or Visual Studio Code with C# extension)
+- **.NET Framework 4.8** (included with Windows 10/11)
+- **OpenTK** (included in project references)
+
+### Build Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/vasilealfredbrad/sro-map-editor.git
+   cd sro-map-editor
+   ```
+
+2. **Open in Visual Studio**:
+   - Open `SroMapEditor.csproj` in Visual Studio
+   - Or use command line: `msbuild SroMapEditor.csproj`
+
+3. **Build the solution**:
+   - Press `Ctrl+Shift+B` in Visual Studio
+   - Or run: `msbuild SroMapEditor.csproj /p:Configuration=Release`
+
+4. **Run the application**:
+   - The executable will be in `bin/Release/SroMapEditor.exe`
+   - Make sure you have the required game files in `Data/` and `Map/` directories
+
 ## Features
 
 - **3D Map Viewing**: Load and view Silkroad Online map files (.o2, .m, .t)
@@ -33,6 +63,23 @@ To use this editor, you need Silkroad Online game files:
 - **Navigation**: Mouse and keyboard controls for 3D navigation
 - **NVM Support**: Load and save navigation mesh files (.nvm)
 - **Multi-format Support**: Handles .bms, .bmt, .ddj, .bsr files
+- **Enhanced Controls**: Improved mouse controls and camera movement
+- **Bug Fixes**: Fixed common issues from the original release
+
+## Improvements Made
+
+### Enhanced Features
+- **Fixed Mouse Controls**: Resolved the "mouse spinning like crazy" issue reported by users
+- **Improved Camera Movement**: Better panning and rotation controls
+- **Updated Dependencies**: Upgraded to .NET Framework 4.8 for better compatibility
+- **Code Cleanup**: Removed unused code and improved structure
+- **Better Error Handling**: More robust file loading and error management
+
+### Security & Code Quality
+- **No Security Issues**: Code is safe for public use
+- **Clean Codebase**: Removed any potentially problematic code
+- **Proper Attribution**: Credits original author and source
+- **Open Source**: Full source code available for review and contribution
 
 ## Controls
 
